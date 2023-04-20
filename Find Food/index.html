@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find Food</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css">
+	<style>
+		body {
+        background-color: #1b1b1b;
+        background-image: linear-gradient(45deg, #2cd3c8, #393ce8);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        text-align: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+		form {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 20px;
+		}
+		input[type="text"], textarea {
+			margin-bottom: 10px;
+			padding: 5px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: 1px solid gray;
+		}
+		.post {
+			border: 1px solid gray;
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+		}
+		.delete-btn {
+			background-color: red;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 5px 10px;
+			cursor: pointer;
+			margin-top: 10px;
+		}
+		.text-color-black{
+  color: rgb(21, 20, 20);
+}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Find Food Inc</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		  <ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="sign in.html">Sign out</a>
+			</li>
+		</div>
+	  </nav>
+	  
+	<div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+				<div class="card">
+					<div class="card-header bg-dark text-white">
+					  <h5 class="mb-0">Find Food</h5>
+					</div>
+                    <div class="card-body">
+	<form id="post-form">
+		<label for="title" class="text-color-black">Pick up Location:</label>
+		<input type="text" id="title" name="title" required>
+		<label for="body"class="text-color-black">Food details:</label>
+		<textarea id="body" name="body" required></textarea>
+		<button type="submit">Add Post</button>
+		</div>
+	</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+	<div id="posts-container"></div>
+	<script src="app.js"></script>
+</body>
+</html>
